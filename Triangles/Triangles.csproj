@@ -73,13 +73,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\GeometryFunctions.cs" />
-    <Compile Include="Helpers\Interfaces\ITrianglesFactory.cs" />
-    <Compile Include="Helpers\Interfaces\ITrianglesColorizer.cs" />
-    <Compile Include="Helpers\Interfaces\ITrianglesFileReader.cs" />
-    <Compile Include="Helpers\TrianglesColorizer.cs" />
-    <Compile Include="Helpers\TrianglesFactory.cs" />
-    <Compile Include="Helpers\TrianglesFileReader.cs" />
+    <Compile Include="Models\Helpers\GeometryFunctions.cs" />
+    <Compile Include="Models\Helpers\Interfaces\ITrianglesFactory.cs" />
+    <Compile Include="Models\Helpers\Interfaces\ITrianglesColorizer.cs" />
+    <Compile Include="Models\Helpers\Interfaces\ITrianglesFileReader.cs" />
+    <Compile Include="Models\Helpers\TrianglesColorizer.cs" />
+    <Compile Include="Models\Helpers\TrianglesFactory.cs" />
+    <Compile Include="Models\Helpers\TrianglesFileReader.cs" />
     <Compile Include="Models\LineSegment.cs" />
     <Compile Include="Models\Triangle.cs" />
     <Compile Include="Presenters\TrianglesPresenter.cs" />

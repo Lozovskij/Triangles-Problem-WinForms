@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Triangles.Models;
 
-namespace Triangles.Helpers.Interfaces
+namespace Triangles.Models.Helpers.Interfaces
 {
     public interface ITrianglesFileReader
     {

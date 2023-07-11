@@ -2,7 +2,7 @@
 using System.Drawing;
 using Triangles.Models;
 
-namespace Triangles.Helpers
+namespace Triangles.Models.Helpers
 {
     public static class GeometryFunctions
     {
@@ -46,7 +46,7 @@ namespace Triangles.Helpers
             // A = y2 - y1
             // B = x1 - x2
             // C = A*x1 + B*y1
-            var A1 = ls1.SecondPoint.Y  - ls1.FirstPoint.Y;
+            var A1 = ls1.SecondPoint.Y - ls1.FirstPoint.Y;
             var B1 = ls1.FirstPoint.X - ls1.SecondPoint.X;
             var C1 = A1 * ls1.FirstPoint.X + B1 * ls1.FirstPoint.Y;
 

@@ -1,8 +1,8 @@
 ﻿using AutoFixture;
 using FluentAssertions;
 using Moq;
-using Triangles.Helpers.Interfaces;
 using Triangles.Models;
+using Triangles.Models.Helpers.Interfaces;
 using Triangles.Presenters;
 using Triangles.Views;
 

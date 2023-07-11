@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using Triangles.Helpers;
 using Triangles.Models;
+using Triangles.Models.Helpers;
 
-namespace UnitTests.Helpers;
+namespace UnitTests.Models.Helpers;
 
 public class TrianglesColorizerTests
 {
@@ -54,9 +54,9 @@ public class TrianglesColorizerTests
         //Arrange
         var sut = new TrianglesColorizer();
         var intersector = new Triangle(new int[] { 0, 0, 0, 300, 300, 300 });
-        var nested1 = new Triangle(new int[] {0, 300, 300, 300, 300, 0});
-        var nested2 = new Triangle(new int[] {100, 300, 300, 300, 300, 100});
-        var nested3 = new Triangle(new int[] {200, 300, 300, 300, 300, 200});
+        var nested1 = new Triangle(new int[] { 0, 300, 300, 300, 300, 0 });
+        var nested2 = new Triangle(new int[] { 100, 300, 300, 300, 300, 100 });
+        var nested3 = new Triangle(new int[] { 200, 300, 300, 300, 300, 200 });
         var triangles = new List<Triangle>
         {
             intersector, nested1, nested2, nested3

@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using System;
 using System.Windows.Forms;
-using Triangles.Helpers;
-using Triangles.Helpers.Interfaces;
+using Triangles.Models.Helpers;
+using Triangles.Models.Helpers.Interfaces;
 using Triangles.Presenters;
 using Triangles.Views;
 

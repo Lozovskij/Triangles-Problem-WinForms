@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Triangles.Helpers.Interfaces;
 using Triangles.Models;
+using Triangles.Models.Helpers.Interfaces;
 
-namespace Triangles.Helpers
+namespace Triangles.Models.Helpers
 {
     public class TrianglesFactory : ITrianglesFactory
     {

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Triangles.Helpers.Interfaces;
-using Triangles.Models;
+using Triangles.Models.Helpers.Interfaces;
 
-namespace Triangles.Helpers
+namespace Triangles.Models.Helpers
 {
     public class TrianglesFileReader : ITrianglesFileReader
     {

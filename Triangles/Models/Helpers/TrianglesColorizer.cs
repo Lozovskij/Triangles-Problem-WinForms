@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Triangles.Helpers.Interfaces;
 using Triangles.Models;
+using Triangles.Models.Helpers.Interfaces;
 
-namespace Triangles.Helpers
+namespace Triangles.Models.Helpers
 {
     public class TrianglesColorizer : ITrianglesColorizer
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Triangles.Helpers.Interfaces;
 using Triangles.Models;
+using Triangles.Models.Helpers.Interfaces;
 using Triangles.Views;
 
 namespace Triangles.Presenters

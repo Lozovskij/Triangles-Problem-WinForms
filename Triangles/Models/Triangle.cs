@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 using System;
-using Triangles.Helpers;
+using Triangles.Models.Helpers;
 
 namespace Triangles.Models
 {

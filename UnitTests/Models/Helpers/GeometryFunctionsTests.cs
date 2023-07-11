@@ -1,9 +1,9 @@
 ﻿using FluentAssertions;
 using System.Drawing;
-using Triangles.Helpers;
 using Triangles.Models;
+using Triangles.Models.Helpers;
 
-namespace UnitTests.Helpers;
+namespace UnitTests.Models.Helpers;
 
 public class GeometryFunctionsTests
 {
