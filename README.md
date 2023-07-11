@@ -4,7 +4,7 @@
 
 It is required to develop a graphical application that displays
 not intersecting triangles of the same color but different shades on a rectangular surface.
-Two triangles are considered intersecting if they overlap each other without completely overlapping each other.
+Two triangles are considered intersecting if they overlap each other without complete overlap.
 
 Starting from the outermost region (rectangular area), all shapes are filled
 in with the selected shade of color, first with the lightest and for a more nested triangle with a
