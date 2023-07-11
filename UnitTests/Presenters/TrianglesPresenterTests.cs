@@ -55,6 +55,26 @@ public class TrianglesPresenterTests
         act.Should().NotThrow();
     }
 
+    [Fact]
+    public void Import_OneTriangle_ShadesCountIsTwo()
+    {
+        //Arrange
+        var f = new Fixture();
+        var triangles = new List<Triangle>() {
+            new Triangle(new int[] { 100, 250, 200, 250, 250, 50 })};
+        triangles[0].ColorLevel = 1;
+        var factoryMock = new Mock<ITrianglesFactory>();
+        var viewMock = new DummyView();
+        factoryMock.Setup(m => m.CreateTriangles(It.IsAny<string>())).Returns(triangles);
+        var presenter = new TrianglesPresenter(viewMock, factoryMock.Object);
+
+        //Act
+        presenter.Import(f.Create<object>(), f.Create<string>());
+
+        //Assert
+        viewMock.ShadesCountText.Should().Be("2");
+    }
+
     private class DummyView : ITrianglesView
     {
         public List<Triangle> Triangles { get; set; }

@@ -36,9 +36,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 40);
+            this.label1.Location = new System.Drawing.Point(13, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 39);
+            this.label1.Size = new System.Drawing.Size(166, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "No Data";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -46,7 +46,7 @@
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport.Location = new System.Drawing.Point(16, 115);
+            this.btnImport.Location = new System.Drawing.Point(13, 115);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(166, 247);
             this.btnImport.TabIndex = 5;
@@ -58,6 +58,7 @@
             // 
             this.trianglesContainer1.AccessibleName = "";
             this.trianglesContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.trianglesContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.trianglesContainer1.Location = new System.Drawing.Point(192, 6);
             this.trianglesContainer1.Name = "trianglesContainer1";
             this.trianglesContainer1.Size = new System.Drawing.Size(1000, 1000);

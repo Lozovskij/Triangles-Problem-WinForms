@@ -37,7 +37,8 @@ namespace Triangles.Presenters
 
         private string GetShadesCountText(List<Triangle> triangles)
         {
-            var count = triangles.Any(t => t.IsIntersected) ? -1 : triangles.Max(t => t.ColorLevel);
+            // don't forget to count rectangle
+            var count = triangles.Any(t => t.IsIntersected) ? -1 : (triangles.Max(t => t.ColorLevel) + 1);
             var countStr = count == -1 ? "Error" : count.ToString();
             return countStr;
         }
