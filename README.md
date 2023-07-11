@@ -28,9 +28,8 @@ the word ERROR should be shown instead of the number of shades.
 
 ### Screenshots
 
-![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/d1e10451-78c5-406a-8e8a-3f8c11e62d1e)
-![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/99d0f447-e9ae-4452-a604-1bf4807661d7)
-
+![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/c73b2cbe-4540-455a-9a18-7c7a34dcea2a)
+![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/2d5ee3d2-43c7-4441-841c-66d39c98732c)
 
 ### Built With
 
