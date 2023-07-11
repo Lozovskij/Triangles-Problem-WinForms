@@ -13,7 +13,13 @@ of the application window). If the collection of triangles contains intersecting
 the word ERROR should be shown instead of the number of shades.
 
 ### Input Example
- 
+
+The collection of triangles to display is set in the input file. The first line of the file
+contains one non-negative number n (n <= 1000), which specifies the number of triangles.
+The following n lines contain a description of the triangles in the format x1 y1 x2 y2 x3 x3,
+where x_i, y_i (0 <= x_i, y_i < = 1000) - coordinates of the vertices of the triangles.
+Three points are guaranteed not to be collinear.
+
  ```sh
 8
 450 150 450 200 400 200
