@@ -57,7 +57,7 @@
             // trianglesContainer1
             // 
             this.trianglesContainer1.AccessibleName = "";
-            this.trianglesContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.trianglesContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(233)))), ((int)(((byte)(133)))));
             this.trianglesContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.trianglesContainer1.Location = new System.Drawing.Point(192, 6);
             this.trianglesContainer1.Name = "trianglesContainer1";

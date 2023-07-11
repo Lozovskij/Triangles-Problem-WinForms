@@ -11,7 +11,11 @@ namespace Triangles
     // this user control is only responsible for triangles drawing
     public partial class TrianglesContainerUserControl : UserControl
     {
-        private Color BackgroundColor { get; } = Color.LightGreen;
+        private const byte MaxRed = 133;
+        private const byte MaxBlue = 133;
+        private const byte MaxGreen = 233;
+        private const byte MaxColorChange = 133;
+        private Color BackgroundColor { get; } = Color.FromArgb(MaxRed, MaxGreen, MaxBlue);
 
         public TrianglesContainerUserControl()
         {
@@ -62,17 +66,12 @@ namespace Triangles
                 return BackgroundColor;
             }
 
-            var firstLevelGreenValue = 255;
-            var lastLevelGreenValue = 65;
-
-            if (colorLevel == 1)
-            {
-                return Color.FromArgb(0, firstLevelGreenValue, 0);
-            }
-            // colorLevel > 1 => maxColorLevel > 1
-            var step = (firstLevelGreenValue - lastLevelGreenValue) / (maxColorLevel - 1);
-            var greenValue = firstLevelGreenValue - (colorLevel - 1) * step;
-            return Color.FromArgb(0, greenValue, 0);
+            var step = MaxColorChange / maxColorLevel;
+            var colorChange = colorLevel * step;
+            return Color.FromArgb(
+                MaxRed - colorChange, 
+                MaxGreen - colorChange,
+                MaxBlue - colorChange);
         }
     }
 }
