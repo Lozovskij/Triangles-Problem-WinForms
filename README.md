@@ -1,5 +1,3 @@
-## Triangles of different shades
-
 ### Problem Description
 
 It is required to develop a graphical application that displays
