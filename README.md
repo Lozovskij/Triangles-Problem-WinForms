@@ -34,6 +34,8 @@ Three points are guaranteed not to be collinear.
 
 ### Screenshots
 
+![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/2de2ee50-9e8d-48af-adca-8f6326f590b4)
+![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/8c20e87a-1381-4cbe-b2e2-bde8315d8cd8)
 ![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/c73b2cbe-4540-455a-9a18-7c7a34dcea2a)
 ![image](https://github.com/Lozovskij/Triangles-Problem-WinForms/assets/56762093/2d5ee3d2-43c7-4441-841c-66d39c98732c)
 
