@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Collections.Generic;
 using Triangles.Models;
+using System.Drawing;
 
 namespace Triangles.Views
 {
@@ -9,10 +10,12 @@ namespace Triangles.Views
     {
         private List<Triangle> _triangles;
         private string _errorMessage;
+        private Color _colorPickerColor;
 
         public TrianglesView()
         {
             InitializeComponent();
+            colorPickerPrevewBox.BackColor = trianglesContainer1.BackColor;
         }
 
         public string ShadesCountText
@@ -41,6 +44,16 @@ namespace Triangles.Views
             }
         }
 
+        public Color ColorPickerColor
+        {
+            get => _colorPickerColor;
+            set
+            {
+                _colorPickerColor = value;
+                ApplyNewColor();
+            }
+        }
+
         public event EventHandler<string> Import;
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -57,9 +70,28 @@ namespace Triangles.Views
             trianglesContainer1.DrawTriangles(_triangles);
         }
 
+        private void ApplyNewColor()
+        {
+            trianglesContainer1.ApplyNewColor(_colorPickerColor);
+        }
+
+
         private void ShowErrorMessage()
         {
             MessageBox.Show(_errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnPickColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog()
+            {
+                FullOpen = true
+            };
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                ColorPickerColor = colorDlg.Color;
+                colorPickerPrevewBox.BackColor = colorDlg.Color;
+            }
         }
     }
 }

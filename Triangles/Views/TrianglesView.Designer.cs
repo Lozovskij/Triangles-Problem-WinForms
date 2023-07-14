@@ -30,7 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnImport = new System.Windows.Forms.Button();
+            this.btnPickColor = new System.Windows.Forms.Button();
+            this.colorPickerPrevewBox = new System.Windows.Forms.PictureBox();
             this.trianglesContainer1 = new Triangles.TrianglesContainerUserControl();
+            ((System.ComponentModel.ISupportInitialize)(this.colorPickerPrevewBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,10 +57,28 @@
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
+            // btnPickColor
+            // 
+            this.btnPickColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPickColor.Location = new System.Drawing.Point(13, 394);
+            this.btnPickColor.Name = "btnPickColor";
+            this.btnPickColor.Size = new System.Drawing.Size(166, 65);
+            this.btnPickColor.TabIndex = 7;
+            this.btnPickColor.Text = "set color";
+            this.btnPickColor.UseVisualStyleBackColor = true;
+            this.btnPickColor.Click += new System.EventHandler(this.btnPickColor_Click);
+            // 
+            // colorPickerPrevewBox
+            // 
+            this.colorPickerPrevewBox.Location = new System.Drawing.Point(13, 465);
+            this.colorPickerPrevewBox.Name = "colorPickerPrevewBox";
+            this.colorPickerPrevewBox.Size = new System.Drawing.Size(166, 35);
+            this.colorPickerPrevewBox.TabIndex = 8;
+            this.colorPickerPrevewBox.TabStop = false;
+            // 
             // trianglesContainer1
             // 
             this.trianglesContainer1.AccessibleName = "";
-            this.trianglesContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(233)))), ((int)(((byte)(133)))));
             this.trianglesContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.trianglesContainer1.Location = new System.Drawing.Point(192, 6);
             this.trianglesContainer1.Name = "trianglesContainer1";
@@ -69,11 +90,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 615);
+            this.Controls.Add(this.colorPickerPrevewBox);
+            this.Controls.Add(this.btnPickColor);
             this.Controls.Add(this.trianglesContainer1);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.label1);
             this.Name = "TrianglesView";
             this.Text = "TrianglesView";
+            ((System.ComponentModel.ISupportInitialize)(this.colorPickerPrevewBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,5 +107,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnImport;
         private TrianglesContainerUserControl trianglesContainer1;
+        private System.Windows.Forms.Button btnPickColor;
+        private System.Windows.Forms.PictureBox colorPickerPrevewBox;
     }
 }
